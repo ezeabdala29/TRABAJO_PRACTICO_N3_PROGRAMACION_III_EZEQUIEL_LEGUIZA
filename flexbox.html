@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 1 - Flexbox</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Ejercicio 1: Tarjetas con Flexbox</h1>
+  </header>
+
+  <main>
+    <a class="boton boton-secundario volver-inicio" href="index.html">Volver al inicio</a>
+
+    <section class="panel">
+      <h2>Autos de Rocket League</h2>
+      <p>
+        Estos autos se pueden ordenar por puntaje o mostrar solamente los que usan hitbox Octane.
+      </p>
+
+      <div class="acciones">
+        <button id="btnOrdenar" type="button">Ordenar por puntaje</button>
+        <button id="btnOctane" type="button">Ver hitbox Octane</button>
+        <button id="btnRestaurar" type="button" class="boton-secundario">Restaurar</button>
+      </div>
+
+      <div id="contenedorTarjetas" class="contenedor-tarjetas"></div>
+    </section>
+  </main>
+  <script src="js/flexbox.js"></script>
+</body>
+</html>
