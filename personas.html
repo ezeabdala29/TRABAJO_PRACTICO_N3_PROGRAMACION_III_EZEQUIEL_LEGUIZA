@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 2 - Personas</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Ejercicio 2: Personas e IMC</h1>
+  </header>
+
+  <main>
+    <a class="boton boton-secundario volver-inicio" href="index.html">Volver al inicio</a>
+
+    <section class="panel">
+      <h2>Agregar persona</h2>
+
+      <form id="formPersona">
+        <label>
+          Nombre
+          <input id="nombre" type="text" required>
+        </label>
+
+        <label>
+          Apellido
+          <input id="apellido" type="text" required>
+        </label>
+
+        <label>
+          Edad
+          <input id="edad" type="number" min="1" required>
+        </label>
+
+        <label>
+          Altura (m)
+          <input id="altura" type="number" min="0.5" step="0.01" required>
+        </label>
+
+        <label>
+          Peso (kg)
+          <input id="peso" type="number" min="1" step="0.1" required>
+        </label>
+
+        <div class="form-acciones">
+          <button type="submit">Agregar persona</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="panel">
+      <h2>Tabla de personas</h2>
+      <p id="mensajePersonas" class="mensaje-vacio">Todavia no hay personas cargadas</p>
+
+      <div class="tabla-contenedor">
+        <table>
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Apellido</th>
+              <th>Edad</th>
+              <th>Altura</th>
+              <th>Peso</th>
+              <th>IMC</th>
+              <th>Accion</th>
+            </tr>
+          </thead>
+          <tbody id="tablaPersonas"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+  <script src="js/personas.js"></script>
+</body>
+</html>
